@@ -1,0 +1,128 @@
+/* ---------- RESET CSS & ROOT ---------- */
+:root {
+  --background__color: #fff300;
+  --white__color: #fff;
+  --black__color: #000;
+  --yellow__color: #ffc400;
+  --bgblue: rgb(0, 110, 255);
+  --footer__bg: rgb(17, 0, 255);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: yellow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ---------- HEADER SECTION ---------- */
+header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 80%;
+  width: 100%;
+}
+
+header strong {
+  background: var(--bgblue);
+  color: var(--white__color);
+  font-size: 32px;
+}
+
+.heading_img {
+  max-height: 600px;
+  overflow: hidden;
+}
+
+.heading_img img {
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+/* ---------- MAIN SECTION ---------- */
+
+main {
+  background: var(--white__color);
+  max-width: 80%;
+  display: flex;
+  flex-direction: row;
+  padding: 50px 0 50px 0;
+}
+
+/* ---------- NAV SECTION ---------- */
+.nav__section {
+  padding-left: 15px;
+  width: 100%;
+}
+
+.nav__section nav {
+  display: flex;
+  flex-direction: column;
+  background: var(--bgblue);
+  padding: 10px 35px 10px 35px;
+  align-items: center;
+}
+
+section nav a {
+  color: var(--white__color);
+  margin: 5px;
+}
+
+/* ---------- ARTICLE SECTION ---------- */
+
+.main__content {
+  padding: 10px;
+}
+
+.main__content h1 {
+  padding-bottom: 20px;
+  color: var(--yellow__color);
+}
+
+.main__content p {
+  text-align: justify;
+}
+/* ---------- ABOUT SECTION ---------- */
+.about__matt {
+  background: var(--bgblue);
+  padding: 15px;
+  margin-right: 15px;
+}
+
+.about__matt figure {
+  text-align: center;
+}
+
+.about__matt figure img {
+  border: 1px solid var(--white__color);
+  width: 120px;
+  height: auto;
+}
+
+.about__matt h3 {
+  color: var(--white__color);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.about__matt p {
+  width: 200px;
+  color: var(--white__color);
+  height: auto;
+  text-align: justify;
+}
+/* ---------- FOOTER SECTION ---------- */
+footer {
+  width: 80%;
+  padding: 5px 0 5px 0;
+  background: var(--footer__bg);
+  color: var(--white__color);
+  text-align: center;
+}
